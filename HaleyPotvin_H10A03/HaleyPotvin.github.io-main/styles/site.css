@@ -1,0 +1,272 @@
+:root {
+    --darkestPurple: #6416db;
+    --darkerPurple: #8b4eb3;
+    --purple: #ba97d1;
+    --darkerBlue: #50a4d8;
+    --blue: #8cd3ff;
+    --lighterBlue: #93f3ff;
+    --blueGreen: #a0ffc8;
+    --darkestGreen: #1ca355;
+    --darkerGreen: #66c54a;
+    --green: #b5ff9e;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(186, 151, 209, 1) 0%, rgba(147, 243, 255, 1) 35%, rgba(181, 255, 158, 1) 100%);
+}
+
+header {
+    padding: 20px;
+    border: 20px solid var(--darkerGreen);
+    background-color: var(--green);
+    font-family: Verdana;
+    font-size: 165%;
+    color: var(--purple);
+    margin: 20px;
+}
+
+h1 {
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 3px 3px 3px var(--darkestPurple);
+}
+
+h3 {
+    font-family: Verdana;
+    font-size: 100%;
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+}
+
+nav {
+    padding: 5px;
+    border: 20px solid var(--blue);
+    background-color: var(--lighterBlue);
+    text-align: center;
+    margin: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-inline-end: 10px;
+}
+
+.list {
+    display: block;
+}
+
+.staff {
+    display: flex;
+    height: 200px;
+    border: 5px solid var(--purple);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container2 {
+    border: 10px solid var(--purple);
+    background: var(--darkerPurple);
+    color: var(--green);
+    padding: 20px;
+}
+
+p {
+    padding: 15px;
+}
+
+a {
+    font-family: Verdana;
+    font-size: medium;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--darkestGreen);
+}
+
+div a {
+    color: var(--darkestPurple);
+}
+
+main {
+    padding: 10px;
+    border: 20px solid var(--darkerBlue);
+    background-color: var(--blueGreen);
+    margin: 20px;
+    font-family: Verdana;
+    font-size: medium;
+    color: var(--darkerPurple);
+    overflow: auto;
+}
+
+footer {
+    padding: 10px;
+    border: 20px solid var(--darkerBlue);
+    background-color: var(--blueGreen);
+    margin: 20px;
+    font-family: Verdana;
+    font-size: medium;
+    color: var(--darkerPurple);
+    text-align: center;
+    font-style: italic;
+}
+
+footer a {
+    color: var(--darkerPurple);
+}
+
+.image1 {
+    float: inline-end;
+    max-width: 50%;
+    height: auto;
+    width: auto;
+    padding: 15px;
+    margin: 15px;
+}
+
+.image2 {
+    float: inline-start;
+    max-width: 50%;
+    height: auto;
+    width: auto;
+    padding: 15px;
+    margin: 15px;
+    clear: both;
+}
+
+.normal {
+    display: block;
+}
+
+h4 {
+    font-family: Verdana;
+    color: var(--darkerPurple);
+    text-align: center;
+}
+
+div p a {
+    text-decoration: underline;
+    color: var(--darkerPurple)
+}
+
+table {
+    margin: auto;
+    border: var(--purple) double 3px;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 3px;
+    border: var(--purple) solid 1px;
+}
+
+tr:nth-of-type(even) {
+    background-color: var(--darkerPurple);
+    color: var(--blue);
+}
+
+tr:nth-of-type(odd) {
+    background-color: var(--blue);
+    color: var(--darkerPurple);
+}
+
+th {
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: left;
+}
+
+td:nth-of-type(even) {
+    text-align: center;
+}
+
+form {
+    display: grid;
+    align-items: baseline;
+}
+
+input,
+select {
+    block-size: 2em;
+    max-inline-size: fit-content;
+    font-size: 1rem;
+}
+
+input,
+fieldset {
+    border-radius: 10px;
+}
+
+input [type="radio"],
+input [type="checkbox"],
+input>label {
+    vertical-align: middle;
+}
+
+input:not([type="radio"], [type="checkbox"]),
+fieldset,
+select {
+    margin-block-end: 15px;
+}
+
+video {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.paragraph {
+    font-style: italic;
+}
+
+@media (min-width: 350px) and (max-width: 768px) {
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        padding: 15px;
+        font-size: 150%;
+        margin: 10px;
+    }
+
+    .image1 {
+        float: inline-end;
+        max-width: 50%;
+        height: auto;
+        width: auto;
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .image2 {
+        float: inline-start;
+        max-width: 50%;
+        height: auto;
+        width: auto;
+        padding: 15px;
+        margin: 15px;
+    }
+
+    h4 {
+        overflow: auto;
+    }
+}
